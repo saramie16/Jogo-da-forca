@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #9f9bb3;
+}
+h1{
+  font-family: 'Bree Serif', serif; 
+  font-size: 3rem;
+}
+h2{
+  margin-top: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+}
+h3{
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+}
+p{
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  margin: 6%;
+  margin-top: 0;
+}
+.jogo-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.forca {
+  fill: transparent;
+  stroke: rgb(40, 25, 49);
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.forca-parte {
+  display: none;
+}
+
+.letras-erradas-container {
+  font-size: 32px;
+}
+
+.letras-erradas-container span {
+  margin: 0 2px;
+}
+
+.palavra-secreta-container {
+  font-size: 45px;
+}
+
+.aviso-palavra-repetida {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -55px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.aviso-palavra-repetida p {
+  margin: 0;
+}
+
+.aviso-palavra-repetida.show {
+  transform: translateY(-50px);
+}
+
+.palavra-secreta-container span {
+  margin: 0 5px;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.849);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: #933ce4b4;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  border: 0;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
