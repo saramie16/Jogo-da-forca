@@ -1,5 +1,5 @@
-const series = ["laranja","abacaxi","morango","uva","melancia","ameixa","abacate","acerola","cereja","manga","kiwi", "goiaba","banana", "lichia", "caqui"];
-const palavraSecreta = series[Math.floor(Math.random() * series.length)];
+const frutas = ["laranja","abacaxi","morango","uva","melancia","ameixa","abacate","acerola","cereja","manga","kiwi", "goiaba","banana", "lichia", "caqui"];
+const palavraSecreta = frutas[Math.floor(Math.random() * frutas.length)];
 const letrasErradas = [];
 const letrasCorretas = [];
 
@@ -53,7 +53,7 @@ function checarJogo() {
   const partesCorpo = document.querySelectorAll(".forca-parte");
 
   if (letrasErradas.length === partesCorpo.length) {
-    mensagem = "Fim de jogo! Você perdeu!";
+    mensagem = "Fim de jogo! Você perdeu! A palavra certa era: " +palavraSecreta;
   }
 
   if (palavraSecreta === container.innerText) {

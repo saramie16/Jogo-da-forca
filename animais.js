@@ -5,7 +5,7 @@ const letrasErradas = [];
 const letrasCorretas = [];
 
 document.addEventListener("keydown", (evento) => {
-  const codigo = evento.keyCode; 
+  const codigo = evento.keyCode; // 65 - 90 (intervalo)
   if (isLetra(codigo)) {
     const letra = evento.key;
     if (letrasErradas.includes(letra)) {
@@ -54,7 +54,7 @@ function checarJogo() {
   const partesCorpo = document.querySelectorAll(".forca-parte");
 
   if (letrasErradas.length === partesCorpo.length) {
-    mensagem = "Fim de jogo! Você perdeu!";
+    mensagem = "Fim de jogo! Você perdeu! A palavra certa era: " +palavraSecreta;
   }
 
   if (palavraSecreta === container.innerText) {

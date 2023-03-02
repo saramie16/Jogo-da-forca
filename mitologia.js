@@ -53,7 +53,7 @@ function checarJogo() {
   const partesCorpo = document.querySelectorAll(".forca-parte");
 
   if (letrasErradas.length === partesCorpo.length) {
-    mensagem = "Fim de jogo! Você perdeu!";
+    mensagem = "Fim de jogo! Você perdeu! A palavra certa era: " +palavraSecreta;
   }
 
   if (palavraSecreta === container.innerText) {
