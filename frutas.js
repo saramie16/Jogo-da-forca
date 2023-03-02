@@ -4,7 +4,7 @@ const letrasErradas = [];
 const letrasCorretas = [];
 
 document.addEventListener("keydown", (evento) => {
-  const codigo = evento.keyCode; // 65 - 90 (intervalo)
+  const codigo = evento.keyCode; 
   if (isLetra(codigo)) {
     const letra = evento.key;
     if (letrasErradas.includes(letra)) {
